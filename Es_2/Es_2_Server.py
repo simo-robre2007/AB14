@@ -15,19 +15,19 @@ while True:
         server_socket.sendto(A.encode(), address)
 
     if (msg == 's')
-          robot.backward(2)
-          I = 'Indietro'
-          server_socket.sendto(I.encode(), address)
+        robot.backward(2)
+        I = 'Indietro'
+        server_socket.sendto(I.encode(), address)
 
     if (msg == 'a')
-          robot.left(2)
-          S = 'Sinistra'
-          server_socket.sendto(S.encode(), address)
+         robot.left(2)
+        S = 'Sinistra'
+        server_socket.sendto(S.encode(), address)
 
     if (msg == 'd')
-          robot.right(2)
-          D = 'Destra'
-          server_socket.sendto(D.encode(), address)
+        robot.right(2)
+        D = 'Destra'
+        server_socket.sendto(D.encode(), address)
 
     if (msg == 'EXIT')
         robot.stop()
